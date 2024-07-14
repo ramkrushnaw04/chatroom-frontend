@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.input-fields {
+  @apply px-[10px] py-[5px] bg-gray-900 text-white focus:outline-none
+}
+
+.button {
+  @apply px-[10px] py-[5px] bg-green-800
+}
+
+html {
+  height: 100svh;
+}
+
+body {
+  height: 100svh;
+}
+
+@keyframes messageAnimation {
+  from {
+    transform: translateY(100vh) ;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.applyMessageAnimation {
+  animation: messageAnimation .5s ease-out ;
+}
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
