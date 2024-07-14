@@ -15,9 +15,9 @@ export const ChatBubble = forwardRef( ( props, ref ) => {
 
 
   return (
-    <div ref={ref} id={id} className={`anime max-w-[600px] flex flex-col gap-[8px] px-[10px] transition-all 1000ms linear relative ${alignmentClass} ${ externalClasses }`}>
+    <div ref={ref} id={id} className={`w-[90%] xs:w-[70%] anime max-w-[600px] flex flex-col gap-[8px] px-[10px] transition-all 1000ms linear relative ${alignmentClass} ${ externalClasses }`}>
       { !repeatedPerson && <h3 className={`w-fit px-[3px] pt-[30px] ${colors.userText}`}>{ name }</h3> }
-      <p className={`text-[15px] w-full break-words ${chatColor} p-[10px] rounded-[10px]`}>{message}</p>
+      <p className={`text-[15px]  break-words ${chatColor} p-[10px] rounded-[10px]`}>{message}</p>
     </div>
   )
 })
